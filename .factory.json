@@ -27,9 +27,7 @@
             "installers": [
               "org.eclipse.che.exec",
               "org.eclipse.che.terminal",
-              "org.eclipse.che.ws-agent",
-              "org.eclipse.che.ls.java",
-              "com.redhat.bayesian.lsp"
+              "org.eclipse.che.ws-agent"
             ],
             "env": {}
           }
@@ -115,6 +113,18 @@
       }
     ],
     "links": []
+  },
+  "ide": {
+  	"onProjectsLoaded": {
+  		"actions": [
+  			{
+  				"id": "runCommand",
+  				"properties": {
+  					"name": "startTomcat"
+  				}
+  			}
+  		]
+  	}
   },
   "creator": {
     "name": "edeandrea",
