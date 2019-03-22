@@ -106,7 +106,7 @@
         "name": "startTomcat",
         "attributes": {
           "goal": "Run",
-          "previewUrl": ""
+          "previewUrl": "${server.tomcat8}"
         },
         "type": "custom"
       },
