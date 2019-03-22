@@ -111,6 +111,15 @@
         "type": "custom"
       },
       {
+        "commandLine": "$TOMCAT_HOME/bin/shutdown.sh && $TOMCAT_HOME/bin/startup.sh",
+        "name": "restartTomcat",
+        "attributes": {
+          "goal": "Run",
+          "previewUrl": "${server.tomcat8}"
+        },
+        "type": "custom"
+      },
+      {
         "commandLine": "mvn clean install -f ${current.project.path}/pom.xml && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
         "name": "deploy",
         "attributes": {
