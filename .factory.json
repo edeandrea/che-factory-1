@@ -23,6 +23,12 @@
               }
             },
             "volumes": {
+              "m2": {
+                "path": "/home/jboss/.m2"
+              },
+              "javadata": {
+                "path": "/home/jboss/jdtls/data"
+              }
             },
             "installers": [
               "org.eclipse.che.exec",
@@ -36,7 +42,7 @@
         },
         "recipe": {
           "type": "dockerimage",
-          "content": "eclipse/ubuntu_jdk8"
+          "content": "edeandrea/stacks-java-tomcat8"
         }
       }
     },
