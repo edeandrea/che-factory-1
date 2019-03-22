@@ -42,7 +42,7 @@
         },
         "recipe": {
           "type": "dockerimage",
-          "content": "registry.access.redhat.com/codeready-workspaces/stacks-java"
+          "content": "eclipse/ubuntu_jdk8"
         }
       }
     },
